@@ -1,0 +1,37 @@
+Part 1: Creature Class
+1. Define a class named Creature.
+2. Implement attributes to track the creature's state:
+o name (string, user-defined name)
+o hunger (integer, hunger level)
+o boredom (integer, boredom level)
+o cleanliness (integer, cleanliness level)
+o is_alive (boolean, indicates if the creature is alive)
+3. Create methods for:
+o __init__(self, name): Initialize the creature with a name and starting
+values for attributes.
+o eat(): Decrease hunger level (with boundaries and potential consequences
+for overfeeding).
+o play(): Decrease boredom level (with boundaries).
+o bathe(): Increase cleanliness level (with boundaries).
+o check_stats(): Display the creature's current hunger, boredom, and
+cleanliness levels.
+o is_dead(): Check if the creature's stats have reached critical levels (hunger,
+boredom, or cleanliness too low), indicating death.
+
+Part 2: Main Game Loop
+1. Create a loop to represent the game turns.
+2. Inside the loop:
+o Display the creature's name and current stats.
+o Present the user with options to feed, play, bathe, or check stats (potentially
+using a menu).
+o Based on the user's choice, call the corresponding creature methods (eat(),
+play(), bathe(), check_stats()) to update the creature's state.
+o Call the is_dead() method to check if the creature has died. If so, end the
+game.
+
+Part 3: Difficulty and Rounds
+1. Allow the user to select a difficulty level (e.g., easy, medium, hard) that affects the
+rate at which the creature's stats deteriorate.
+2. Set a maximum number of rounds for the game.
+3. After each round, update the creature's stats by a certain amount based on the
+difficulty level.
